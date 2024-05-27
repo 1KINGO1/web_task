@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <title>Product Cart</title>
+</head>
+<body>
+    <main>
+        <section class="products">
+            <form class="add-form">
+                <label class="add-form__label">
+                    <input type="text" placeholder="Назва товару" class="add-form__input">
+                </label>
+                <button class="add-form__submit-button tooltip-button button-shadow"
+                        type="submit"
+                        data-tooltip="Додати товар"
+                >
+                    Додати
+                </button>
+            </form>
+            <ul class="product-list">
+                <li class="product-list__item product-list__item_removed">
+                    <p class="product-list__item-title">
+                        Помідори
+                    </p>
+                    <div class="product-list__item-count-wrapper">
+                        <button class="product-list__item-decrease-button tooltip-button button-shadow" data-tooltip="Прибрати товар">
+                            -
+                        </button>
+                        <span class="product-list__item-count">
+                            2
+                        </span>
+                        <button class="product-list__item-increase-button tooltip-button button-shadow" data-tooltip="Додати товар">
+                            +
+                        </button>
+                    </div>
+                    <div class="product-list__item-state">
+                        <div class="product-list__item-state-label">
+                            Куплено
+                        </div>
+                        <button class="product-list__remove-item-button button-shadow  tooltip-button" data-tooltip="Прибрати товар">×</button>
+                    </div>
+                </li>
+                <li class="product-list__item">
+                    <input type="text" class="product-list__item-title-change" placeholder="Помідори" value="Помідори"/>
+                    <div class="product-list__item-count-wrapper">
+                        <button class="product-list__item-decrease-button tooltip-button button-shadow" data-tooltip="Прибрати товар">
+                            -
+                        </button>
+                        <span class="product-list__item-count">
+                            2
+                        </span>
+                        <button class="product-list__item-increase-button tooltip-button button-shadow" data-tooltip="Додати товар">
+                            +
+                        </button>
+                    </div>
+                    <div class="product-list__item-state">
+                        <div class="product-list__item-state-label">
+                            Куплено
+                        </div>
+                        <button class="product-list__remove-item-button button-shadow tooltip-button" data-tooltip="Прибрати товар">×</button>
+                    </div>
+                </li>
+                <li class="product-list__item">
+                    <p class="product-list__item-title">
+                        Помідори авліор ловіра лорів лоар вірало рівл арівлор алоівраоі
+                    </p>
+                    <div class="product-list__item-count-wrapper">
+                        <button class="product-list__item-decrease-button tooltip-button button-shadow" data-tooltip="Прибрати товар">
+                            -
+                        </button>
+                        <span class="product-list__item-count">
+                            2
+                        </span>
+                        <button class="product-list__item-increase-button tooltip-button button-shadow" data-tooltip="Додати товар">
+                            +
+                        </button>
+                    </div>
+                    <div class="product-list__item-state">
+                        <div class="product-list__item-state-label">
+                            Куплено
+                        </div>
+                        <button class="product-list__remove-item-button button-shadow tooltip-button" data-tooltip="Прибрати товар">×</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="cart">
+            <section class="cart__section">
+                <header>
+                    Залишилося
+                </header>
+                <ul>
+                    <li>
+                        Печиво
+                        <span>2</span>
+                    </li>
+                    <li>
+                        Сир
+                        <span>1</span>
+                    </li>
+                    <li>
+                        Сир
+                        <span>1</span>
+                    </li>
+                    <li>
+                        Сир
+                        <span>1</span>
+                    </li>
+                    <li>
+                        Сир
+                        <span>1</span>
+                    </li>
+                    <li>
+                        Сир
+                        <span>1</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="cart__section">
+                <header>
+                    Куплено
+                </header>
+                <ul>
+                    <li class="cart__item-bought">
+                        Помідори
+                        <span>2</span>
+                    </li>
+                    <li class="cart__item-bought">
+                        Помідори
+                        <span>2</span>
+                    </li>
+                    <li class="cart__item-bought">
+                        Помідори
+                        <span>2</span>
+                    </li>
+                    <li class="cart__item-bought">
+                        Помідори
+                        <span>2</span>
+                    </li>
+
+                </ul>
+            </section>
+        </section>
+    </main>
+    <div class="badge">
+        <p class="badge__title">
+            Buy List
+        </p>
+        <p class="badge__created-by">
+            Created by:
+        </p>
+        <p class="badge__name">
+            Lys Taras
+        </p>
+    </div>
+</body>
+</html>
