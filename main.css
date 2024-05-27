@@ -199,7 +199,7 @@ main > section {
     visibility: hidden;
 }
 
-.product-list__item_removed .product-list__item-state-label:before {
+.product-list__item_removed .product-list__item-state-button:before {
     content: "Не";
 }
 
@@ -281,7 +281,7 @@ main > section {
     border-radius: 6px;
 }
 
-.product-list__item-state-label{
+.product-list__item-state-button{
     border-radius: 6px;
     border: 1px solid rgba(128, 128, 128, 0.5);
     padding: 10px 30px;
@@ -302,7 +302,7 @@ main > section {
         width: 32px;
         height: 32px;
     }
-    .product-list__item-state-label{
+    .product-list__item-state-button{
         border-radius: 5px;
         padding: 7px 22px;
         font-size: 14px;
@@ -331,7 +331,7 @@ main > section {
         width: 24px;
         height: 24px;
     }
-    .product-list__item-state-label{
+    .product-list__item-state-button{
         border-radius: 4px;
         padding: 4px 14px;
         font-size: 12px;
