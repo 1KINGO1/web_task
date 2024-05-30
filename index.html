@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="main.css">
+    <script defer src="main.js" type="module"></script>
     <title>Product Cart</title>
 </head>
 <body>
     <main>
         <section class="products">
-            <form class="add-form">
+            <form class="add-form" id="add-form">
                 <label class="add-form__label">
-                    <input type="text" placeholder="Назва товару" class="add-form__input">
+                    <input type="text" placeholder="Назва товару" name="productName" class="add-form__input">
                 </label>
                 <button class="add-form__submit-button tooltip-button button-shadow"
                         type="submit"
@@ -20,7 +21,7 @@
                     Додати
                 </button>
             </form>
-            <ul class="product-list">
+            <ul class="product-list" id="product-list">
                 <li class="product-list__item product-list__item_removed">
                     <p class="product-list__item-title">
                         Помідори
@@ -44,7 +45,7 @@
                     </div>
                 </li>
                 <li class="product-list__item">
-                    <input type="text" class="product-list__item-title-change" placeholder="Помідори" value="Помідори"/>
+                    <input type="text" class="product-list__item-title-change" placeholder="Капуста" value="Капуст"/>
                     <div class="product-list__item-count-wrapper">
                         <button class="product-list__item-decrease-button tooltip-button button-shadow" data-tooltip="Прибрати товар">
                             -
@@ -65,7 +66,7 @@
                 </li>
                 <li class="product-list__item">
                     <p class="product-list__item-title">
-                        Помідори авліор ловіра лорів лоар вірало рівл арівлор алоівраоі
+                        Сир
                     </p>
                     <div class="product-list__item-count-wrapper">
                         <button class="product-list__item-decrease-button tooltip-button button-shadow" data-tooltip="Прибрати товар">
@@ -92,7 +93,7 @@
                 <header>
                     Залишилося
                 </header>
-                <ul>
+                <ul id="products-left-list">
                     <li>
                         Печиво
                         <span>2</span>
@@ -123,7 +124,7 @@
                 <header>
                     Куплено
                 </header>
-                <ul>
+                <ul id="products-bought-list">
                     <li class="cart__item-bought">
                         Помідори
                         <span>2</span>

@@ -212,11 +212,13 @@ main > section {
 
 .product-list__item-title-change {
     padding: 5px;
+    margin: 14px 0;
     border-radius: 4px;
     border: 1px solid gray;
+    transition: .2s ease-in-out all;
 }
 .product-list__item-title-change:focus {
-    outline: 1px solid blue;
+    outline: 1px solid #0095ff;
 
 }
 
