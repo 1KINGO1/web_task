@@ -457,6 +457,10 @@ main > section {
     white-space: nowrap;
 }
 
+button.tooltip-button:disabled:before {
+    display: none;
+}
+
 .tooltip-button:hover::before{
     bottom: 110%;
     transform: scale(1) translateX(-50%);
